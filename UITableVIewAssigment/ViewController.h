@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TaskTableViewCell.h"
+#import "Task.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
